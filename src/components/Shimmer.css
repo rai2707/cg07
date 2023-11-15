@@ -1,0 +1,33 @@
+/* Shimmer Css */
+
+.shimmer_head_test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .simmer_cards_test {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    width: 200px;
+    height: 60vh;
+    margin: 10px;
+  }
+  
+  .animate {
+    animation: shimmer 2s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+  }
+  @keyframes shimmer {
+    from {
+      background-position: -1000px 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
